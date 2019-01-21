@@ -36,7 +36,7 @@
 		}
 		.name{
 			color: #9A1322;
-			padding-top: 20px;
+			padding-top: 15px;
 			text-align: left;
 			font-family: 'Kelly Slab';
 			text-transform: uppercase;
@@ -53,47 +53,51 @@
 			color: white;
 			font-size: 30px;
 		}
+		table{
+			text-align: center;
+		}
 		table tr td i{
 			padding: 5px;
 			color: white;
 		}
+		table tr th{
+			text-align: center;
+			text-transform: uppercase;
+		}
 
 		@media screen and (max-width: 768px){
 			.brand_row .name{
+				padding-top: 15px;
+				font-size: 25px;
+			}
+		}
+		@media screen and (max-width: 540px){
+			.brand_row .name{
+				padding-top: 15px;
 				font-size: 20px;
 			}
 		}
-		@media screen and (max-width: 450px){
-			.brand_row .name{
-				font-size: 15px;
-			}
-		}
-		@media screen and (max-width: 296px){
-			.brand_row .name{
-				font-size: 12px;
-			}
-		}
-		
+	
 	</style>
 
 	</head>
 
 	<body>
 		<div class="container-fluid">
-			<div class="container-fluid row brand_row">
-				<div class="col-md-6 col-sm-6 col-xs-6"><center><img src="image/charcoallogo.jpeg" width="100" height="100"></center></div>
-				<div class="col-md-6 col-sm-6 col-xs-6 name">The Charcoal Bay</div>
+			<div class="row brand_row">
+				<div class="col-lg-6 col-md-6 col-sm-4 col-xs-4"><center><img src="image/charcoallogo.jpeg" width="100" height="100"></center></div>
+				<div class="col-lg-6 col-md-6 col-sm-8 col-xs-8 name">The Charcoal Bay</div>
 			</div><br><br><br>
-			<div class="container-fluid table_row">
+			<div class="row table_row">
 				<div class="row table_title">
 					<center><span style="">Current Orders</span></center>
 				</div>
-				<div class="row col-md-12">
+				<div class="row col-lg-12 col-md-12">
 					<center>
-					<table class="table" style="text-align: center">
+					<table class="table">
 						<tr>
-							<th style="text-align: center; text-transform: uppercase;">Order</th>
-							<th style="text-align: center; text-transform: uppercase;">Status</th>
+							<th>Order</th>
+							<th>Status</th>
 						</tr>
 						<tr>
 							<td>1001</td>
