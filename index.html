@@ -25,9 +25,53 @@
 			background: linear-gradient(rgba(154,19,34), rgba(154,19,34));
 			background-position: center;
 			font-family: 'Kreon';
-			font-size: 25px;
+			
 			
 			color: white;
+		}
+		.brand_row{
+			background-color: white;
+			height: 60px;
+
+		}
+		.name{
+			color: #9A1322;
+			padding-top: 20px;
+			text-align: left;
+			font-family: 'Kelly Slab';
+			text-transform: uppercase;
+			font-weight: bolder;
+			font-size: 25px;
+		}
+		.table_row{
+			margin: 0px;
+			padding: 0px;
+			font-size: 23px;
+		}
+		.table_row .table_title span{
+			font-variant: small-caps;
+			color: white;
+			font-size: 30px;
+		}
+		table tr td i{
+			padding: 5px;
+			color: white;
+		}
+
+		@media screen and (max-width: 768px){
+			.brand_row .name{
+				font-size: 20px;
+			}
+		}
+		@media screen and (max-width: 450px){
+			.brand_row .name{
+				font-size: 15px;
+			}
+		}
+		@media screen and (max-width: 296px){
+			.brand_row .name{
+				font-size: 12px;
+			}
 		}
 		
 	</style>
@@ -36,13 +80,13 @@
 
 	<body>
 		<div class="container-fluid">
-			<div class="container-fluid row" style="background-color: white; height: 60px;">
+			<div class="container-fluid row brand_row">
 				<div class="col-md-6 col-sm-6 col-xs-6"><center><img src="image/charcoallogo.jpeg" width="100" height="100"></center></div>
-				<div class="col-md-6 col-sm-6 col-xs-6" style="color: #9A1322; padding-top: 20px; text-align: left; font-family: 'Kelly Slab'; text-transform: uppercase; font-weight: bolder; font-size: 2vw;">The Charcoal Bay</div>
-			</div><br><br>
-			<div class="container-fluid" style="margin:0px; padding: 0px;">
-				<div class="row">
-					<center><span style="font-variant: small-caps; color: white; font-size: 30px;">Current Orders</span></center>
+				<div class="col-md-6 col-sm-6 col-xs-6 name">The Charcoal Bay</div>
+			</div><br><br><br>
+			<div class="container-fluid table_row">
+				<div class="row table_title">
+					<center><span style="">Current Orders</span></center>
 				</div>
 				<div class="row col-md-12">
 					<center>
@@ -54,25 +98,25 @@
 						<tr>
 							<td>1001</td>
 							<td>In Preperation
-								<i class="far fa-clock fa-lg" style="padding: 5px; color: white;"></i>
+								<i class="far fa-clock fa-lg"></i>
 							</td>
 						</tr>
 						<tr>
 							<td>1002</td>
 							<td>In Preperation
-								<i class="far fa-clock fa-lg" style="padding: 5px; color: white"></i>
+								<i class="far fa-clock fa-lg"></i>
 							</td>
 						</tr>
 						<tr>
 							<td>1003</td>
 							<td>Ready
-								<i class="fas fa-check-circle fa-lg" style="padding: 5px; color: white"></i>
+								<i class="fas fa-check-circle fa-lg"></i>
 							</td>
 						</tr>
 						<tr>
 							<td>1004</td>
 							<td>Ready
-								<i class="fas fa-check-circle fa-lg" style="padding: 5px; color: white"></i>
+								<i class="fas fa-check-circle fa-lg"></i>
 							</td>
 						</tr>
 					</table></center>
