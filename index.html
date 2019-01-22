@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Herfy</title>
+	<title>The Charcoal Bay</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="image/charcoallogo.jpeg" type="icon">
@@ -22,18 +22,16 @@
 
 	<style type="text/css">
 		body{
-			width: 100%;
-			background: linear-gradient(rgba(154,19,34), rgba(154,19,34));
-			background-position: center;
+			background-color: rgba(154,19,34);
 			font-family: 'Kreon';
-			
-			
 			color: white;
 		}
 		.brand_row{
 			background-color: white;
 			height: 60px;
-
+		}
+		.brand_row .logo{
+			padding-left: 50px;
 		}
 		.name{
 			color: #9A1322;
@@ -47,44 +45,83 @@
 		.table_row{
 			margin: 0px;
 			padding: 0px;
-			font-size: 23px;
 		}
 		.table_row .table_title span{
 			font-variant: small-caps;
 			color: white;
+			font-size: 40px;
+			text-decoration: underline;
+		}
+
+		.table{
 			font-size: 30px;
 		}
-		table{
-			text-align: center;
-		}
-		table tr td i{
-			padding: 5px;
-			color: white;
-		}
 		table tr th{
-			text-align: center;
 			text-transform: uppercase;
 		}
 
+		#left{
+			text-align: left;
+			padding-left: 50px;
+		}
+		#right{
+			text-align: right;
+    		padding-right: 50px;
+		}
+
+
+		@media screen and (max-width: 768px){
+			.brand_row .logo{
+				padding-left: 10px;
+			}
+			.table{
+			font-size: 20px;
+			}
+			#left{
+				text-align: left;
+				padding-left: 30px;
+			}
+			#right{
+				text-align: right;
+	    		padding-right: 30px;
+			}
+		}
 		@media screen and (max-width: 768px){
 			.brand_row .name{
 				font-family: 'Algerian';
-				padding-top: 15px;
-				font-size: 30px;
+				padding-top: 5px;
+				font-size: 25px;
 			}
 		}
 		@media screen and (max-width: 540px){
 			.brand_row .name{
 				font-family: 'Algerian';
-				padding-top: 15px;
-				font-size: 25px;
+				padding-top: 10px;
+				font-size: 20px;
 			}
 		}
-		@media screen and (max-width: 385px){
+		@media screen and (max-width: 450px){
 			.brand_row .name{
 				font-family: 'Algerian';
-				padding-top: 15px;
-				font-size: 20px;
+				padding-top: 5px;
+				font-size: 18px;
+			}
+			.table_row .table_title span{
+				font-variant: small-caps;
+				color: white;
+				font-size: 25px;
+				text-decoration: underline;
+			}
+			.table{
+				font-size: 10px;
+			}
+			#left{
+				text-align: left;
+				padding-left: 10px;
+			}
+			#right{
+				text-align: right;
+	    		padding-right: 10px;
 			}
 		}
 	
@@ -95,46 +132,51 @@
 	<body>
 		<div class="container-fluid">
 			<div class="row brand_row">
-				<div class="col-lg-6 col-md-6 col-sm-4 col-xs-4"><center><img src="image/charcoallogo.jpeg" width="100" height="100"></center></div>
-				<div class="col-lg-6 col-md-6 col-sm-8 col-xs-8 name">The Charcoal Bay</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 logo"><img src="image/charcoallogo.jpeg" width="100" height="100"></div>
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 name">The Charcoal Bay</div>
 			</div><br><br><br>
 			<div class="row table_row">
 				<div class="row table_title">
 					<center><span style="">Current Orders</span></center>
 				</div>
-				<div class="row col-lg-12 col-md-12">
-					<center>
+				
+				<div class="table-hover">
 					<table class="table">
-						<tr>
-							<th>Order Id</th>
-							<th>Status</th>
-						</tr>
-						<tr>
-							<td>1001</td>
-							<td>In Preperation
-								<i class="far fa-clock fa-lg"></i>
-							</td>
-						</tr>
-						<tr>
-							<td>1002</td>
-							<td>In Preperation
-								<i class="far fa-clock fa-lg"></i>
-							</td>
-						</tr>
-						<tr>
-							<td>1003</td>
-							<td>Ready
-								<i class="fas fa-check-circle fa-lg"></i>
-							</td>
-						</tr>
-						<tr>
-							<td>1004</td>
-							<td>Ready
-								<i class="fas fa-check-circle fa-lg"></i>
-							</td>
-						</tr>
-					</table></center>
+						<thead>
+							<tr>
+								<th id="left">Order Id</th>
+								<th id="right">Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td id="left">1001</td>
+								<td id="right">In Preperation
+									<i class="far fa-clock fa-lg"></i>
+								</td>
+							</tr>
+							<tr>
+								<td id="left">1002</td>
+								<td id="right">In Preperation
+									<i class="far fa-clock fa-lg"></i>
+								</td>
+							</tr>
+							<tr>
+								<td id="left">1003</td>
+								<td id="right">Ready
+									<i class="fas fa-check-circle fa-lg"></i>
+								</td>
+							</tr>
+							<tr>
+								<td id="left">1004</td>
+								<td id="right">Ready
+									<i class="fas fa-check-circle fa-lg"></i>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
+			
 			</div>
 		</div>
 
